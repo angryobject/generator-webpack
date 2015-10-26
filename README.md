@@ -1,3 +1,7 @@
+# What
+
+A simple generator based on [https://github.com/angryobject/webpack-react-starter](https://github.com/angryobject/webpack-react-starter)
+
 # How
 
 ```
