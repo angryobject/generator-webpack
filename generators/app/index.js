@@ -5,6 +5,7 @@ module.exports = generators.Base.extend({
       generators.Base.apply(this, arguments);
 
       this.option('react');
+      this.option('redux');
    },
 
    writing: {
@@ -27,6 +28,11 @@ module.exports = generators.Base.extend({
 
          if (this.options.react) {
             this.directory('src/components');
+
+            if (this.options.redux) {
+               this.directory('src/actions');
+               this.directory('src/reducers');
+            }
          }
       }
    },
